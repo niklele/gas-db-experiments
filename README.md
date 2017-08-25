@@ -16,7 +16,13 @@ sudo -H pip3 install https://github.com/matplotlib/basemap/archive/v1.1.0.tar.gz
 pip3 install -r requirements.txt
 ```
 
-3. Open jupyter notebook
+3. Configure jupyter
+```
+jupyter nbextension enable --py --sys-prefix widgetsnbextension
+jupyter nbextension enable --py --sys-prefix gmaps
+```
+
+4. Open jupyter notebook
 ```
 jupyter notebook
 ```
